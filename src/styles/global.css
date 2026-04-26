@@ -91,13 +91,20 @@ body {
   padding: 2rem;
 }
 
+.rune-circle-wrap {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 2rem;
+}
+
 .rune-circle {
   width: 280px;
   height: 280px;
   border: 1px solid #7b3fb540;
   border-radius: 50%;
-  margin: 0 auto 2rem;
-  position: relative;
+  position: absolute;
+  inset: 0;
   animation: spinSlow 30s linear infinite;
   box-shadow: 0 0 40px #7b3fb525 inset, var(--glow-purple);
 }
@@ -124,6 +131,21 @@ body {
 }
 
 @keyframes spinSlow { to { transform: rotate(360deg); } }
+
+.rune-photo-wrap {
+  position: absolute;
+  inset: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.rune-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
 
 .hero-sub {
   font-family: var(--font-body);
@@ -379,6 +401,14 @@ body {
 }
 
 .photo-card.featured .photo-inner { aspect-ratio: 16/9; }
+
+.photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
 .photo-placeholder {
   width: 100%;
