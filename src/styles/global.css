@@ -368,7 +368,7 @@ body {
 /* ─── GALERÍA ────────────────────────────────────────────────── */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
 }
 
@@ -396,11 +396,11 @@ body {
 
 .photo-inner {
   position: relative;
-  aspect-ratio: 4/5;
+  aspect-ratio: 2/3;
   overflow: hidden;
 }
 
-.photo-card.featured .photo-inner { aspect-ratio: 16/9; }
+.photo-card.featured .photo-inner { aspect-ratio: 3/2; }
 
 .photo-img {
   width: 100%;
